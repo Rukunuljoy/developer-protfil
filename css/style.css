@@ -1,0 +1,245 @@
+/* stylesheet or css  */
+
+
+/* adding google fonts poppins  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+/* universal css or base */
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 3.5rem 0rem;
+}
+
+/* frequently using class  */
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    padding: 0rem 1.4rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* root css  start here  */
+
+section.hero-area {
+    position: relative;
+    background: url(../images/top-banner.png) no-repeat;
+}
+
+.hero-area-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.hero-left-side {
+    width: 50%;
+}
+
+.hero-left-side h1 {
+    font-size: 3.4rem;
+    font-weight: bold;
+}
+
+.hero-left-side h2 {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.hero-left-side p {
+    font-size: 1rem;
+    margin: 1rem 0rem;
+    color: #333;
+}
+
+.hire-me-btn {
+    background: linear-gradient(45deg, tomato, salmon);
+    display: inline-block;
+    padding: .6rem 2rem;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: .4rem;
+}
+
+.colorize {
+    color: tomato;
+}
+
+.hero-right-side {
+    width: 40%;
+}
+
+
+/* Dream Big /  */
+.dream-big {
+    background: url(../images/dream-bg.png) no-repeat right !important;
+
+}
+
+
+
+
+
+/* experiences  */
+.experience-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.experiece {
+    position: relative;
+    background: url(../images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.experience-wrapper {
+    position: relative;
+    padding: 1rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+
+}
+
+.experience-box {
+    position: relative;
+    width: 45%;
+    padding: 1.5rem 2.5rem;
+    box-shadow: 0px 0px 50px rgba(151, 143, 143, 0.24);
+    border-left: 7px solid;
+    border-image: linear-gradient(tomato, rgb(209, 131, 123));
+    border-image-slice: 1;
+    border-radius: 4px;
+
+}
+
+.colorize-border {
+    border-image: linear-gradient(blue, cyan);
+    border-left: 7px solid;
+    border-image-slice: 1;
+    border-radius: 4px;
+}
+
+.experience-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.experience-box span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: salmon;
+    display: block;
+    margin: .3rem 0rem;
+}
+
+.experience-box p {
+    color: #333;
+}
+
+footer{
+    text-align: center;
+    padding: 3rem 0rem;
+}
+
+
+/* Responsive  */
+@media (max-width: 1170px) {
+    .container {
+        max-width: 100%;
+        padding: 0rem 1.6rem;
+    }
+    .hero-left-side h1{
+        font-size: 3rem;
+    }
+.experience-box{
+    width: 50%;
+    margin: .5rem;
+    padding: 1rem;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+    .hero-area-wrapper{
+        flex-direction: column;
+    }
+      .hero-left-side,
+      .hero-right-side{
+          width: 100%;
+      }
+
+    .hero-left-side h1 {
+        font-size: 3rem;
+    }
+    .experience-wrapper{
+        flex-direction: column;
+    }
+    .experience-box {
+        width: 100%;
+        margin: .5rem;
+        padding: 1rem;
+    }
+
+
+}
+
+@media (max-width: 375px) {
+section{
+    padding: 2rem 0rem;
+}
+
+  .hero-left-side{
+      margin-bottom: 1.5rem;
+  }
+
+    .hero-left-side h1 {
+        font-size: 2rem;
+    }
+
+    .dream-big .hero-left-side{
+        order: 1;
+    }
+     .dream-big .hero-right-side {
+         order: 2;
+     }
+
+}
